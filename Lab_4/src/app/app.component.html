@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h5>Лабораторна робота 4!!!</h5>
+        <h2>Введіть розмір масиву!</h2>
+        <input [(ngModel)] = "arrSize" type = "number"/><br>
+        <p>Ваш масив</p>
+        <input *ngFor = "let element of arr, let i = index; trackBy: trackByFn" [(ngModel)] = "arr[i]" type = "number"/>
+        <child-comp *ngIf = "arrSize != 0" [min] = "findMin()" [max] = "findMax()"></child-comp>
+    </body>
+</html>
