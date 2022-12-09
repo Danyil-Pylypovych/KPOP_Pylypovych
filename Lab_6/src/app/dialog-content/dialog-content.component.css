@@ -1,0 +1,19 @@
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: 200;
+    
+}
+.add {
+    background-color: forestgreen;
+    color: white;
+}
+.close {
+    background-color: rgb(178, 35, 10);
+    color: white;
+}
+.info{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}

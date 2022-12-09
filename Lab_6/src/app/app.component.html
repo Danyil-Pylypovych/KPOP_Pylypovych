@@ -1,0 +1,54 @@
+<html>
+    <body>
+        <h1>Favorites</h1>
+        <div class="ctrlb">
+        <button class="show" mat-raised-button (click)="ShowFavorites()">Show favourites</button>
+        <button class="clear" mat-raised-button (click)="ClearFavorites()">Clear</button>
+        </div>
+        <div class="favtable">
+            <table class="center">
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Login</th>
+                <th>Password</th>
+                <th>Phone number</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let users of favStored">
+                    <td>{{users.name}}</td>   
+                    <td>{{users.email}}</td>       
+                    <td>{{users.login}}</td>
+                    <td>{{users.password}}</td>
+                    <td>{{users.phone}}</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="table">
+        <table class="center">
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Login</th>
+            <th>Password</th>
+            <th>Phone number</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let users of users">
+                <td>{{users.name}}</td>   
+                <td>{{users.email}}</td>       
+                <td>{{users.login}}</td>
+                <td>{{users.password}}</td>
+                <td>{{users.phone}}</td>
+                <td><button mat-raised-button (click) = "openDialog(users.id)">Details</button></td>
+          
+            </tr>
+        </tbody>
+        </table>
+        </div>
+    </body>
+</html> 
+
+
+
