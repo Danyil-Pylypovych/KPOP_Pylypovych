@@ -1,0 +1,17 @@
+<div class="content">
+  <h2>Інофрмація про організацію</h2>
+  <h1>Назва* <input type = "text" [(ngModel)] = "name"></h1> <p class = "errors">{{err1}}</p><br>
+  <h1>Місто* <input type = "text" [(ngModel)] = "city"></h1><p class = "errors">{{err2}}</p><br>
+  <h1>Адреса* <input type = "text" [(ngModel)] = "adress"></h1><p class = "errors">{{err3}}</p><br>
+  <h2>Контактна особа</h2>
+  <h1>Контактна особа* <input type = "text" [(ngModel)] = "user"></h1><p class = "errors">{{err4}}</p><br>
+  <h1>Телефон*  +38<input type = "text" [(ngModel)] = "phoneNumber"></h1><p class = "errors">{{err5}}</p><br>
+  <h1>E-mail* <input type = "text" [(ngModel)] = "email"></h1><p class = "errors">{{err6}}</p><br>
+  <h2>Інформація про об'єкт</h2>
+  <h1>Назва* <input type = "text" [(ngModel)] = "nameOB"></h1><p class = "errors">{{err7}}</p><br>
+  <h1>Область використання ПТО* <button (click)="opal = true">Опалення</button> <button (click)="vent = true">Вентиляція</button> 
+  <button (click)="GVS = true">ГВС</button></h1><br>
+  <p class = "errors">{{err8}}</p> <br>
+  <button class="snd" (click)="checkAllVal()">Надіслати</button><p class="result">{{result}}</p>
+  
+</div>
